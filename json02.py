@@ -15,7 +15,7 @@ cursor = conn.cursor()
 """
 url = "http://ihongss.com/json/exam2.json"
 str1= requests.get(url).text
-data1 = json.loads(str1) #str -> dict로 타입 변경
+data1 = json.loads(str1) #str(문자열) -> dict로 타입 변경
 #ret = data1['ret']# 딕셔너리에 있는 키("ret")의 
                    #값{"id":"a386","name":"123","age":34, "pw" : "abc"}을 불러온다
 ret1 = data1['ret1']
